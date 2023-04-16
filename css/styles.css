@@ -10,6 +10,7 @@ html, body {
   background: url("../img/header_bg.png") 100% 0 no-repeat;
   background-size: cover;
   height: 100%;
+  min-height: 800px;
   padding-top: 35px;
   padding-bottom: 19px;
   box-sizing: border-box;
@@ -228,5 +229,105 @@ html, body {
     height: 12px; }
   .link:hover {
     opacity: 1; }
+
+.exclusive__wrapper {
+  display: flex;
+  justify-content: flex-start; }
+.exclusive__item:nth-child(1) {
+  background: url("../img/exclusive-1.png");
+  background-size: cover;
+  flex-grow: 1;
+  min-height: 683px; }
+.exclusive__item:nth-child(2) {
+  background: url("../img/exclusive-2.png");
+  background-size: cover;
+  flex-grow: 1; }
+.exclusive__item {
+  padding: 228px 50px 0 51px;
+  box-sizing: border-box; }
+.exclusive__tag {
+  color: #1e88e5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.8px; }
+.exclusive__name {
+  margin-top: 18px;
+  color: #212121;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 700; }
+.exclusive__details {
+  margin-top: 24px;
+  margin-bottom: 47px;
+  width: 390px;
+  color: #6c6c6c;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24.04px; }
+
+.trend-prod {
+  padding: 120px 0; }
+  .trend-prod__wrapper {
+    display: flex;
+    justify-content: space-between; }
+  .trend-prod__title {
+    color: #212121;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 700; }
+  .trend-prod__items {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 26px; }
+  .trend-prod__item {
+    transition: box-shadow 0.3s; }
+    .trend-prod__item:hover {
+      box-shadow: 0 0 8px lightgray; }
+  .trend-prod__item img {
+    width: 370px;
+    height: 370px;
+    object-fit: cover; }
+
+.hot-deal {
+  background: url("../img/hot-deal_bg.png") 100% 0 no-repeat;
+  background-size: cover;
+  height: 100%;
+  min-height: 800px;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column; }
+  .hot-deal__container {
+    flex: 1 0 auto; }
+  .hot-deal__tag {
+    color: #e53935;
+    font-family: "Montserrat",sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    margin-top: 287px; }
+  .hot-deal__name {
+    margin-top: 22px;
+    color: #212121;
+    font-family: "Montserrat",sans-serif;
+    font-size: 62px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: -4px; }
+  .hot-deal__details {
+    margin-top: 34px;
+    margin-bottom: 45px;
+    width: 480px;
+    color: #6c6c6c;
+    font-family: "Montserrat",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; }
 
 /*# sourceMappingURL=styles.css.map */
