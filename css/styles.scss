@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap');
-
+@import "fonts";
 
 .container {
   width: 1170px;
@@ -8,7 +7,6 @@
 html, body {
   height: 100%;
 }
-
 .header {
   background: url("../img/header_bg.png") 100% 0 no-repeat;
   background-size: cover;
@@ -85,68 +83,6 @@ html, body {
     flex: 1 0 auto;
   }
 
-}
-.active {
-  color: #212121;
-  font-weight: 700;
-  border-bottom: 2px solid black;
-}
-.dots {
-  display: flex;
-  gap: 5px;
-  flex: 0 0 auto;
-  justify-content: center;
-  align-items: center;
-}
-.dot {
-  background-color: black;
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  opacity: 0.2;
-  transition: opacity 0.3s;
-  &:hover {
-    cursor: pointer;
-    opacity: 0.3;
-  }
-}
-.dot-active {
-  width: 40px;
-  height: 40px;
-  opacity: 1;
-  &:hover {
-    opacity: 1;
-  }
-}
-
-.btn {
-  color: #212121;
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
-  border-radius: 23px;
-  letter-spacing: 3.6px;
-  background-color: #ffffff;
-  padding: 11px 61px 11px 31px;
-  position: relative;
-  opacity: 0.7;
-  transition: opacity 0.3s;
-  &::after {
-    content: "";
-    position: absolute;
-    background: url("../img/icons/arrow_sml.svg") no-repeat;
-    top: 16px;
-    right: 28px;
-    width: 9px;
-    height: 12px;
-  }
-  &:hover {
-    opacity: 1;
-  }
 }
 .featured {
   padding: 120px 0;
@@ -234,42 +170,6 @@ html, body {
     font-size: 22px;
     font-weight: 700;
     line-height: 29.88px;
-  }
-}
-.active-tab {
-  color: #212121;
-  font-size: 36px;
-  font-weight: 700;
-  border-bottom: 3px solid black;
-  &:hover {
-    color: #212121;
-  }
-
-
-}
-.link {
-  color: #212121;
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
-  text-transform: uppercase;
-  letter-spacing: 3.6px;
-  text-decoration: none;
-  padding-right: 21px;
-  opacity: 0.7;
-  position: relative;
-  &::after {
-    content: "";
-    position: absolute;
-    background: url("../img/icons/arrow_sml.svg") no-repeat;
-    top: 6px;
-    right: -4px;
-    width: 9px;
-    height: 12px;
-  }
-  &:hover {
-    opacity: 1;
   }
 }
 .exclusive {
@@ -388,5 +288,104 @@ html, body {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
+  }
+}
+
+// Active & dots & btn & link
+
+.active {
+  color: #212121;
+  font-weight: 700;
+  border-bottom: 2px solid black;
+}
+.dots {
+  display: flex;
+  gap: 5px;
+  flex: 0 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.dot {
+  background-color: black;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  opacity: 0.2;
+  transition: opacity 0.3s;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.3;
+  }
+}
+.dot-active {
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.btn {
+  color: #212121;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+  border-radius: 23px;
+  letter-spacing: 3.6px;
+  background-color: #ffffff;
+  padding: 11px 61px 11px 31px;
+  position: relative;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+  &::after {
+    content: "";
+    position: absolute;
+    background: url("../img/icons/arrow_sml.svg") no-repeat;
+    top: 16px;
+    right: 28px;
+    width: 9px;
+    height: 12px;
+  }
+  &:hover {
+    opacity: 1;
+  }
+}
+.active-tab {
+  color: #212121;
+  font-size: 36px;
+  font-weight: 700;
+  border-bottom: 3px solid black;
+  &:hover {
+    color: #212121;
+  }
+}
+.link {
+  color: #212121;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  text-decoration: none;
+  padding-right: 21px;
+  opacity: 0.7;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    background: url("../img/icons/arrow_sml.svg") no-repeat;
+    top: 6px;
+    right: -4px;
+    width: 9px;
+    height: 12px;
+  }
+  &:hover {
+    opacity: 1;
   }
 }
