@@ -69,7 +69,7 @@ html, body {
   .header__details {
     margin-top: 15px;
     margin-bottom: 40px;
-    width: 475px;
+    max-width: 475px;
     color: #6c6c6c;
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
@@ -85,8 +85,7 @@ html, body {
     display: flex;
     justify-content: space-between; }
   .featured__tab {
-    width: 80px;
-    height: 25px;
+    max-width: 80px;
     color: #6c6c6c;
     font-family: "Montserrat", sans-serif;
     font-size: 36px;
@@ -102,7 +101,7 @@ html, body {
     .featured__tab:nth-child(2) {
       padding-left: 17px; }
   .featured__divider {
-    width: 300px;
+    max-width: 300px;
     height: 1px;
     background-color: #6c6c6c;
     margin-top: 12px; }
@@ -120,7 +119,7 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 270px;
+    max-width: 270px;
     height: 270px;
     border: 1px solid #9c9c9c;
     background-color: #ffffff;
@@ -194,7 +193,7 @@ html, body {
 .promo__details {
   margin-top: 9px;
   margin-bottom: 43px;
-  width: 390px;
+  max-width: 390px;
   color: #6c6c6c;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
@@ -225,8 +224,8 @@ html, body {
     .trend-prod__item:hover {
       box-shadow: 0 0 8px lightgray; }
   .trend-prod__item img {
-    width: 370px;
-    height: 370px;
+    max-width: 370px;
+    min-height: 370px;
     object-fit: cover; }
 
 .hot-deal {
@@ -260,7 +259,7 @@ html, body {
   .hot-deal__details {
     margin-top: 12px;
     margin-bottom: 41px;
-    width: 480px;
+    max-width: 480px;
     color: #6c6c6c;
     font-family: "Montserrat",sans-serif;
     font-size: 14px;
@@ -304,7 +303,7 @@ html, body {
     margin-bottom: 10px;
     letter-spacing: -1px; }
   .exclusive__details {
-    width: 345px;
+    max-width: 345px;
     color: #6c6c6c;
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
@@ -327,7 +326,7 @@ html, body {
     letter-spacing: 1.26px;
     margin-bottom: 2px; }
   .mobile-app__name {
-    width: 490px;
+    max-width: 490px;
     color: #212121;
     font-family: "Montserrat", sans-serif;
     font-size: 62px;
@@ -357,24 +356,23 @@ html, body {
       height: 100%; }
 
 .footer {
-  padding: 120px 0 30px 0;
+  padding: 117px 0 30px 0;
   background-color: #f7f7f7; }
   .footer__info-wrapper {
     display: flex;
     justify-content: space-between;
-    gap: 75px;
+    gap: 60px;
     padding-bottom: 60px; }
   .footer__contact {
     display: flex;
-    flex-direction: column;
-    gap: 24px; }
+    flex-direction: column; }
   .footer__tag {
     color: #6c6c6c;
     font-family: "Montserrat",sans-serif;
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1.8px; }
+    letter-spacing: 1.25px; }
   .footer__text {
     color: #212121;
     font-family: "Montserrat", sans-serif;
@@ -382,7 +380,12 @@ html, body {
     font-weight: 400;
     line-height: 22px;
     font-style: normal;
-    width: 240px; }
+    max-width: 240px;
+    word-spacing: -1.3px; }
+    .footer__text-wrapper {
+      margin-top: 7px; }
+  .footer .footer__text {
+    margin-top: 14px; }
   .footer__tel a {
     text-decoration: none;
     color: #212121;
@@ -392,18 +395,22 @@ html, body {
     .footer__tel a:hover {
       text-decoration: underline; }
   .footer__mail {
+    display: inline-block;
     text-decoration: none;
     color: #212121;
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
-    font-weight: 400; }
+    font-weight: 400;
+    margin-top: 3px;
+    letter-spacing: -0.4px; }
     .footer__mail:hover {
       text-decoration: underline; }
   .footer__info {
+    padding-left: 11px;
     display: grid;
     grid-template-columns: 140px 196px;
-    grid-template-rows: 35px repeat(3, 10px);
-    grid-gap: 17px 100px; }
+    grid-template-rows: 20px repeat(3, 10px);
+    grid-gap: 17px 95px; }
     .footer__info .footer__tag {
       grid-column: 1 / 3; }
   .footer__link {
@@ -412,27 +419,31 @@ html, body {
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.7px;
+    letter-spacing: 0.3px;
     text-decoration: none; }
     .footer__link:hover {
       text-decoration: underline; }
   .footer__form {
     display: flex;
     flex-direction: column;
-    gap: 24px; }
+    padding-left: 9px; }
+    .footer__form .footer__text {
+      word-spacing: -3.1px; }
   .footer__copy {
     color: #6c6c6c;
     font-family: "Montserrat",sans-serif;
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.6px; }
-  .footer__social svg {
-    width: 28px;
-    height: 28px;
-    opacity: 0.7; }
-    .footer__social svg:hover {
-      opacity: 1; }
+    letter-spacing: 0.34px; }
+  .footer__social {
+    padding-right: 8px; }
+    .footer__social svg {
+      width: 28px;
+      height: 28px;
+      opacity: 0.7; }
+      .footer__social svg:hover {
+        opacity: 1; }
   .footer__privacy {
     text-decoration: none;
     color: #6c6c6c;
@@ -440,7 +451,7 @@ html, body {
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.6px; }
+    letter-spacing: 0.45px; }
     .footer__privacy:hover {
       text-decoration: underline; }
     .footer__privacy-wrapper {
@@ -449,14 +460,15 @@ html, body {
       align-items: center; }
 
 .form {
-  width: 370px;
+  max-width: 370px;
   height: 48px;
   position: relative;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid #000; }
+  border: 1px solid #000;
+  margin-top: 21px; }
   .form__text {
-    width: 388px; }
+    max-width: 388px; }
   .form__input {
     width: 100%;
     height: 100%;
@@ -475,7 +487,8 @@ html, body {
       color: #6c6c6c;
       font-family: "Montserrat",sans-serif;
       font-size: 14px;
-      font-weight: 400; }
+      font-weight: 400;
+      letter-spacing: -0.33px; }
   .form__btn {
     position: absolute;
     height: 100%;
@@ -571,7 +584,7 @@ html, body {
     position: absolute;
     background: url("../img/icons/arrow_sml.svg") no-repeat;
     top: 6px;
-    right: 0px;
+    right: 0;
     width: 9px;
     height: 12px; }
   .link:hover {
