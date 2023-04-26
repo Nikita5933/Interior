@@ -1,0 +1,167 @@
+@media (max-width: 1399px) {
+.promo {
+  &__container {
+    width: 100%;
+  }
+}
+}
+@media (max-width: 1199px) {
+  .container {
+    width: 95%;
+  }
+  .featured {
+    &__items {
+      grid-template-columns:repeat(2, minmax(240px, 270px));
+      grid-template-rows: repeat(2, minmax(max-content, 270px));
+      justify-content: center;
+    }
+  }
+  .promo {
+
+    &__item {
+      &:nth-child(1) {
+        background-position-x: 100%;
+      }
+      &:nth-child(2) {
+        background-position-x: 100%;
+      }
+    }
+    &__details {
+      color: #999999;
+      font-weight: bold;
+    }
+  }
+  .trend-prod {
+    &__items {
+      grid-template-columns: repeat(auto-fill, 370px);
+      grid-template-rows: repeat(auto-fill, 370px);
+      justify-content: center;
+    }
+  }
+}
+@media (max-width: 991px) {
+  .header {
+
+    &__nav {
+      margin-right: 0;
+      margin-left: 10px;
+    }
+    &__link {
+      padding-left: 0;
+      margin-right: 14px;
+    }
+  }
+
+
+}
+@media (max-width: 767px) {
+  .header {
+    &__wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__logo {
+      align-self: flex-start;
+      margin-left: 14px;
+    }
+    &__nav {
+      margin-right: 0;
+      margin-left: 12px;
+    }
+  }
+  .promo {
+    &__item {
+      padding-left: 10px;
+      padding-right: 0;
+      &:nth-child(1) {
+        padding-left: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 575px) {
+  .header {
+    background-position-x: 70%;
+    &__wrapper {
+      justify-content: center;
+      align-items: center;
+    }
+    &__logo {
+      align-self: initial;
+    }
+    &__nav {
+      flex-direction: column;
+      gap: 0;
+    }
+    &__menu {
+      flex-direction: column;
+    }
+    &__link {
+      text-align: center;
+    }
+    &__search {
+      margin-top: 0;
+    }
+    &__tag {
+      margin-top: 30px;
+    }
+    &__name {
+      font-size: 42px;
+    }
+    &__details {
+      color: #312c2c;
+    }
+  }
+  .featured {
+    padding: 40px 0;
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__items {
+      grid-template-columns: 270px;
+      grid-template-rows: 270px;
+      margin-top: 20px;
+    }
+  }
+  .link {
+    &::after {
+      left: 175px;
+    }
+  }
+  .promo {
+    &__wrapper {
+     flex-direction: column;
+     align-items: center;
+      gap: 20px;
+    }
+    &__item {
+      padding-top: 125px;
+      &:nth-child(1) {
+        min-height: 460px;
+        max-width: initial;
+      }
+      &:nth-child(2) {
+        min-height: 460px;
+        max-width: initial;
+      }
+    }
+  }
+  .trend-prod {
+    padding: 40px 0;
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__items {
+      margin-top: 26px;
+      grid-template-columns: minmax(280px, 370px);
+      grid-template-rows: minmax(280px, 370px);
+    }
+    &__item {
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+}
