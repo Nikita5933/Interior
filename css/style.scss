@@ -351,10 +351,14 @@ html, body {
     &:hover {
       box-shadow: 0 0 8px lightgray;
     }
+    & img {
+      width: 100%;
+      height: 100%;
+    }
   }
   &__item:nth-child(1) {
     background: url("../img/ex_pillow.png") no-repeat;
-    background-size: contain;
+    background-size: cover;
     grid-row: 1 / 3;
     padding: 183px 30px 20px 30px;
     &:hover {
