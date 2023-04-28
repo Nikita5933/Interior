@@ -813,7 +813,8 @@ html, body {
       max-width: initial; }
     .promo__item:nth-child(2) {
       min-height: 460px;
-      max-width: initial; }
+      max-width: initial;
+      padding-left: 10px; }
 
   .trend-prod {
     padding: 40px 0; }
