@@ -15,15 +15,15 @@
         <div class="header__logo">
             <a href="index.html"><img class="header__img" src="img/header_logo.png" alt="logo"></a>
         </div>
-        <nav class="header__nav desktop">
+        <nav id="home" class="header__nav desktop">
             <ul class="header__menu">
-                <li class="header__link active">home</li>
-                <li class="header__link">products</li>
-                <li class="header__link">history</li>
-                <li class="header__link">showroom</li>
-                <li class="header__link">contact</li>
+                <li class="header__link active"><a href="#home">home</a></li>
+                <li class="header__link"><a href="#products">products</a></li>
+                <li class="header__link"><a href="#">history</a></li>
+                <li class="header__link"><a href="#showroom">showroom</a></li>
+                <li class="header__link"><a href="#contacts">contact</a></li>
+                <li class="header__link"><a href="#" class="header__search"><img src="img/icons/search.svg" alt="search"></a></li>
             </ul>
-            <a href="#" class="header__search"><img src="img/icons/search.svg" alt="search"></a>
         </nav>
             <div class="header__nav-mobile">
                 <label for="menu-button" class="burger-icon"><svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,11 +35,11 @@
                 <div class="burger__nav-wrapper">
                     <label for="menu-button" class="burger__nav-close"><svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.207 6.207a1 1 0 0 0-1.414-1.414L12 10.586 6.207 4.793a1 1 0 0 0-1.414 1.414L10.586 12l-5.793 5.793a1 1 0 1 0 1.414 1.414L12 13.414l5.793 5.793a1 1 0 0 0 1.414-1.414L13.414 12l5.793-5.793z" fill="#000000"/></svg></label>
                     <ul class="header__menu">
-                        <li class="header__link active">home</li>
-                        <li class="header__link">products</li>
-                        <li class="header__link">history</li>
-                        <li class="header__link">showroom</li>
-                        <li class="header__link">contact</li>
+                        <li class="header__link active"><a href="#home">home</a></li>
+                        <li class="header__link"><a href="#products">products</a></li>
+                        <li class="header__link"><a href="#">history</a></li>
+                        <li class="header__link"><a href="#showroom">showroom</a></li>
+                        <li class="header__link"><a href="#contacts">contact</a></li>
                     </ul>
                     <a href="#" class="header__search"><img src="img/icons/search.svg" alt="search"></a>
                 </div>
@@ -59,7 +59,7 @@
 
 </header>
 <main>
-<section class="featured">
+<section id="products" class="featured">
     <div class="container">
         <div class="featured__wrapper">
         <div class="featured__tabs">
@@ -153,7 +153,7 @@
             <div class="dot"></div>
         </div>
     </section>
-    <section class="exclusive">
+    <section id="showroom" class="exclusive">
         <div class="container">
             <div class="exclusive__wrapper">
                 <div class="exclusive__item">
@@ -188,7 +188,7 @@
         </div>
     </div>
 </main>
-<footer class="footer">
+<footer id="contacts" class="footer">
     <div class="container">
         <div class="footer__info-wrapper">
             <div class="footer__contact">

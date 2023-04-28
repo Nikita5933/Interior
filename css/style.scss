@@ -31,7 +31,6 @@ html, body {
     padding-top: 14px;
     text-transform: uppercase;
     list-style-type: none;
-    color: #8c8c8c;
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
@@ -43,16 +42,21 @@ html, body {
       cursor: pointer;
       border-bottom: 3px solid black;
     }
-    &:nth-child(1) {
-      padding-left: 0;
-      padding-bottom: 7px;
+    &:last-child:hover {
+      border: none;
+      opacity: .6;
+    }
+    & a {
+      text-decoration: none;
+      color: #8c8c8c;
+      font-size: 14px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      letter-spacing: 1.44px;
     }
   }
   &__nav {
-    width: 560px;
-    display: flex;
-    gap: 18px;
-    margin-right: 70px;
+    width: 590px;
     &-mobile {
       display: none;
       position: relative;
@@ -62,13 +66,7 @@ html, body {
       box-sizing: border-box;
     }
   }
-  &__search {
-    align-self: center;
-    margin-top: 14px;
-    &:hover {
-      opacity: .6;
-    }
-  }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -127,7 +125,7 @@ html, body {
     position: absolute;
     height: 100vh;
     width: 300px;
-    right: -2.4vw;
+    right: -2.46vw;
     top: -34px;
     opacity: 0;
     pointer-events: none;
@@ -172,7 +170,7 @@ html, body {
       color: #6c6c6c + 20;
     }
     &:nth-child(1) {
-      padding-left: 2px;
+      padding-left: 4px;
     }
 
     &:nth-child(2) {
@@ -271,22 +269,24 @@ html, body {
     width: 100%;
   }
   &__item:nth-child(1) {
-    background: url("../img/exclusive-1.png") -8px -3px no-repeat;
+    background: url("../img/exclusive-1.png") -7px 0 no-repeat;
     background-size: cover;
     flex-grow: 1;
     min-height: 683px;
     max-width: 50%;
-    padding-left: 40px;
+    padding-left: 42px;
   }
   &__item:nth-child(2) {
-    background: url("../img/exclusive-2.png") 6px -3px no-repeat;
+    background: url("../img/exclusive-2.png") 2px 1px no-repeat;
     background-size: cover;
     min-height: 683px;
     max-width: 50%;
     flex-grow: 1;
+
+    padding-left: 51px;
   }
   &__item {
-    padding: 222px 50px 0 55px;
+    padding: 225px 0 0 55px;
     box-sizing: border-box;
   }
   &__tag {
@@ -318,7 +318,7 @@ html, body {
   }
 }
 .trend-prod {
-  padding: 107px 0 115px 0;
+  padding: 110px 0 121px 0;
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -336,7 +336,7 @@ html, body {
     display: grid;
     grid-template-columns: repeat(3, minmax(320px, 370px));
     grid-template-rows: repeat(2, minmax(320px, 370px));
-    gap: 36px;
+    gap: 30px;
   }
   &__item {
     transition: box-shadow 0.3s;
@@ -394,7 +394,7 @@ html, body {
   }
 }
 .exclusive {
-  padding: 120px 0;
+  padding: 119px 0;
   &__wrapper {
     display: grid;
     grid-template-columns: minmax(400px, 570px) repeat(2, minmax(200px, 270px));
@@ -452,7 +452,7 @@ html, body {
 }
 .mobile-app {
   padding: 122px 0 117px 0;
-  background: url("../img/mobile_bg.png") 58% 100% no-repeat;
+  background: url("../img/mobile_bg.png") 46% 100% no-repeat;
   background-size: cover;
 
   &__tag {
@@ -509,7 +509,7 @@ html, body {
   &__info-wrapper {
     display: flex;
     justify-content: space-between;
-    gap: 60px;
+    gap: 62px;
     padding-bottom: 60px;
   }
   &__contact {
@@ -604,8 +604,7 @@ html, body {
     letter-spacing: 0.34px;
   }
   &__social {
-    padding-right: 8px;
-    width: 150px;
+    width: 136px;
     & svg {
       width: 28px;
       height: 28px;
@@ -622,7 +621,7 @@ html, body {
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.45px;
+    letter-spacing: 0.36px;
 
     &:hover {
       text-decoration: underline;
@@ -688,14 +687,20 @@ html, body {
   font-weight: 700;
   border-bottom: 3px solid black;
   letter-spacing: 0.56px;
+  & a {
+    color: #212121;
+    font-weight: 700;
+    letter-spacing: 0.56px;
+  }
 }
 
 .dots {
   display: flex;
-  gap: 5px;
   flex: 0 0 auto;
   justify-content: center;
   align-items: center;
+  padding-bottom: 4px;
+  gap: 9px;
 }
 
 .dot {
@@ -706,7 +711,6 @@ html, body {
   opacity: 0.2;
   transition: opacity 0.3s;
   padding-left: 5px;
-
   &:hover {
     cursor: pointer;
     opacity: 0.3;
@@ -714,8 +718,7 @@ html, body {
 }
 
 .dot-active {
-  width: 38px;
-  height: 38px;
+  transform: scale(1.3);
   opacity: 1;
 
   &:hover {
