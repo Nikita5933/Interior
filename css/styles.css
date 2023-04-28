@@ -18,12 +18,13 @@ html, body {
   flex-direction: column; }
   .header__menu {
     display: flex;
+    width: 520px;
+    justify-content: space-between;
     padding: 0; }
   .header__logo {
     align-self: center;
     margin-top: 14px; }
   .header__link {
-    padding-left: 24px;
     padding-top: 14px;
     text-transform: uppercase;
     list-style-type: none;
@@ -32,7 +33,7 @@ html, body {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     letter-spacing: 1.44px;
-    border: 3px solid transparent;
+    outline: 3px solid transparent;
     transition: color 0.3s; }
     .header__link:hover {
       color: black;
@@ -42,12 +43,22 @@ html, body {
       padding-left: 0;
       padding-bottom: 7px; }
   .header__nav {
+    width: 560px;
     display: flex;
     gap: 18px;
     margin-right: 70px; }
+    .header__nav-mobile {
+      display: none;
+      position: relative;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 10px;
+      box-sizing: border-box; }
   .header__search {
     align-self: center;
     margin-top: 14px; }
+    .header__search:hover {
+      opacity: .6; }
   .header__wrapper {
     display: flex;
     justify-content: space-between; }
@@ -80,6 +91,41 @@ html, body {
     word-spacing: -1.2px; }
   .header__container {
     flex: 1 0 auto; }
+
+.burger-icon {
+  cursor: pointer; }
+  .burger-icon svg {
+    width: 30px;
+    height: 30px; }
+.burger-button {
+  display: none; }
+  .burger-button:checked ~ .burger__nav-wrapper {
+    opacity: 1;
+    pointer-events: auto; }
+.burger__nav-wrapper {
+  position: absolute;
+  height: 100vh;
+  width: 300px;
+  right: -2.4vw;
+  top: -34px;
+  opacity: 0;
+  pointer-events: none;
+  background-color: #ebeaea;
+  transition: opacity .5s;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+.burger__nav-close {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px; }
+  .burger__nav-close svg {
+    width: 30px;
+    height: 30px; }
 
 .featured {
   padding: 112px 0 120px 0; }
@@ -641,9 +687,12 @@ html, body {
   .exclusive__details {
     color: #c0b3b3; } }
 @media (max-width: 991px) {
+  .header__menu {
+    width: 495px; }
   .header__nav {
     margin-right: 0;
-    margin-left: 10px; }
+    margin-left: 10px;
+    gap: 0; }
   .header__link {
     padding-left: 0;
     margin-right: 14px; }
@@ -679,15 +728,25 @@ html, body {
   .footer__privacy {
     font-size: 11px; } }
 @media (max-width: 767px) {
-  .header__wrapper {
-    flex-direction: column;
-    align-items: flex-start; }
   .header__logo {
     align-self: flex-start;
     margin-left: 14px; }
   .header__nav {
     margin-right: 0;
     margin-left: 12px; }
+    .header__nav-mobile {
+      display: block; }
+  .header__menu {
+    width: initial;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; }
+  .header__search {
+    align-self: center; }
+  .header__link {
+    outline: initial;
+    border: 3px solid transparent; }
 
   .promo__item {
     padding-left: 10px;
@@ -704,30 +763,30 @@ html, body {
     flex-wrap: wrap; }
   .footer__social {
     width: 230px;
-    padding-right: 0; } }
+    padding-right: 0; }
+
+  .desktop {
+    display: none; } }
 @media (max-width: 575px) {
   .header {
-    background-position-x: 70%; }
+    background-position-x: 70%;
+    min-height: 100vh; }
     .header__wrapper {
-      justify-content: center;
+      justify-content: space-between;
       align-items: center; }
     .header__logo {
       align-self: initial; }
-    .header__nav {
-      flex-direction: column;
-      gap: 0; }
-    .header__menu {
-      flex-direction: column; }
-    .header__link {
-      text-align: center; }
-    .header__search {
-      margin-top: 0; }
     .header__tag {
-      margin-top: 30px; }
+      margin-top: 140px; }
     .header__name {
       font-size: 42px; }
     .header__details {
       color: #312c2c; }
+    .header__nav-mobile {
+      padding: 14px 0 0 0; }
+
+  .burger__nav-wrapper {
+    width: 250px; }
 
   .featured {
     padding: 40px 0; }
